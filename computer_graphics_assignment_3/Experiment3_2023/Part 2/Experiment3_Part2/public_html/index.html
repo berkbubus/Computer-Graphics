@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <title>Assignment 1 - Berk Bubuş</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/initialize.js" defer></script>
+        <script src="js/shaders.js" defer></script>
+        <script src="js/app.js" defer></script>
+    </head>
+    <body>
+            <div class="row">
+        <div class="column">
+            <canvas id="glCanvas" width="512" height="512">
+            Oops ... your browser doesn't support the HTML5 canvas element
+            </canvas>
+        </div>
+        <div class="column">
+            <div class="row marg">
+                <div class="column">
+                    Scale Sun
+                    <div class="row" >
+                        0.1
+                        <input id="sunScale" type="range" min="0.1" max="2" value="1" step="0.01"> 2
+                    </div>  
+                </div>
+                <div class="column">
+                    Rotation Speed Sun
+                    <div class="row" >
+                        0.001
+                        <input id="sunRotationSpeed" type="range" min="0.001" max="0.01" value="0.005" step="0.0001"> 0.01
+                    </div>  
+                </div>
+                <div class="column">
+                    Clockwise
+                    <div class="row" >
+                        <input id="sunRotationDirection" type="checkbox">
+                    </div>  
+                </div>
+            </div>
+            <div class="row marg">
+                <div class="column">
+                    Scale Earth
+                    <div class="row" >
+                        0.1
+                        <input id="earthScale" type="range" min="0.1" max="2" value="1" step="0.01"> 2
+                    </div>  
+                </div>
+                <div class="column">
+                    Rotation Speed Earth
+                    <div class="row" >
+                        0.001
+                        <input id="earthRotationSpeed" type="range" min="0.001" max="0.01" value="0.005" step="0.0001"> 0.01
+                    </div>  
+                </div>
+                <div class="column">
+                    Clockwise
+                    <div class="row" >
+                        <input id="earthRotationDirection" type="checkbox">
+                    </div>  
+                </div>
+            </div>
+            <div class="row marg">
+                <div class="column">
+                    Scale Moon
+                    <div class="row" >
+                        0.5
+                        <input id="moonScale" type="range" min="0.5" max="2" value="1.25" step="0.01"> 2
+                    </div>  
+                </div>
+                <div class="column">
+                    Rotation Speed Moon
+                    <div class="row" >
+                        0.001
+                        <input id="moonRotationSpeed" type="range" min="0.001" max="0.01" value="0.005" step="0.0001"> 0.01
+                    </div>  
+                </div>
+                <div class="column">
+                    Clockwise
+                    <div class="row" >
+                        <input id="moonRotationDirection" type="checkbox">
+                    </div>  
+                </div>
+            </div>
+            <div class="row marg">
+                <div class="column">
+                    Earth Orbit Rotation
+                    <div class="row" >
+                        0.005
+                        <input id="earthOrbitRotation" type="range" min="0.005" max="0.05" value="0.025" step="0.0005"> 0.05
+                    </div>  
+                </div>
+                <div class="column">
+                    Clockwise
+                    <div class="row" >
+                        <input id="earthOrbitRotationDirection" type="checkbox">
+                    </div>  
+                </div>
+            </div>
+            <div class="row marg">
+                <div class="column">
+                    Moon Orbit Rotation
+                    <div class="row" >
+                        0.01
+                        <input id="moonOrbitRotation" type="range" min="0.01" max="0.1" value="0.05" step="0.001"> 0.1
+                    </div>  
+                </div>
+                <div class="column">
+                    Clockwise
+                    <div class="row" >
+                        <input id="moonOrbitRotationDirection" type="checkbox">
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>

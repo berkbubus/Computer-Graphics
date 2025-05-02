@@ -1,0 +1,17 @@
+.column {
+    float: left;
+    width: 33.33%;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+.marg {
+      margin-left: 50px;
+      margin-top: 10px;
+      padding-right: 100px;
+      width: 150%;
+}
